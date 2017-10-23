@@ -7,7 +7,7 @@ include_once 'bootstrap.php';*/
 session_start();
 include_once 'config.php';
 function __autoload($className){
-	include_once 'system/'.$className.'.php';
+	include_once __DIR__.'/system/'.$className.'.php';
 }
 include 'Bootstrap.php';
 
