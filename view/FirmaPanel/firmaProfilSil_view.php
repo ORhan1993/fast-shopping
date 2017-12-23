@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kullanıcı Paneli</title>
+    <title>Firma Üye Profil Silme</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -27,52 +27,29 @@
   <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="javascript:void()"><b>Kullanıcı Paneli</b></a>
+        <a href="javascript:void()"><b>Firma Profil Sil</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Lütfen bilgilerinizi giriniz.</p>
-        <form action="<?php echo SITE_URL; ?>/user/login" method="post">
+        <form action="<?php echo SITE_URL; ?>/FirmaUser/firmaProfilSil" method="post">
 			<input type="hidden" name="state" value="state" />
-          <div class="form-group has-feedback">
-            <input type="text" class="form-control" name="eposta" placeholder="E-mail Adresi">
-            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="password" name="parola" class="form-control" placeholder="Şifre" style="width:100%;">
-            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-          </div>
+        
 		  <div class="form-group has-feedback">
-            <input type="text" name="captcha" class="form-control" placeholder="Sayıların Toplamı" style="width:100%;">
+            <input type="text" class="form-control" name="firmaEposta" placeholder="Firma E-mail Adresi">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+         
+          <div class="form-group has-feedback">
+            <input type="password" name="firmaSifre" class="form-control" placeholder="Şifre" style="width:100%;">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
-		  <?php
-		  $sayi1=rand(1,10);
-		  $sayi2=rand(1,10);
-		  $toplamSayi=$sayi1+$sayi2;
-		  echo "$sayi1"." ile "."$sayi2 toplamı kaçtır?";
-		 
-		  ?>
-		  <input type="hidden" name="toplamSayi" value="<?php echo $toplamSayi; ?>" />
           <div class="row">
-            <div class="col-xs-8">
-              <div class="checkbox icheck">
-                <label>
-                  <input type="checkbox" name="beni_hatirla"> Beni Hatırla!
-                </label>
-              </div>
-            </div><!-- /.col -->
+           
             <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Giriş Yap</button>
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Firma Sil</button>
             </div><!-- /.col -->
 			
           </div>
 		  <br/>
-		  <p align="center">
-			<a href="<?php echo SITE_URL; ?>/admin/sifremi_unuttum">Şifremi Unuttum!</a>
-		  </p>
-		   <p align="center">
-			<a href="<?php echo SITE_URL; ?>/memberRegistration/registration">Üye Ol</a>
-		  </p>
         </form>
 		
 	<br>

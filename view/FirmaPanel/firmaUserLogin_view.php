@@ -41,6 +41,18 @@
             <input type="password" name="parola" class="form-control" placeholder="Şifre" style="width:100%;">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
+		<div class="form-group has-feedback">
+            <input type="text" name="captcha" class="form-control" placeholder="Sayıların Toplamı" style="width:100%;">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+		  <?php
+		  $sayi1=rand(1,10);
+		  $sayi2=rand(1,10);
+		  $toplamSayi=$sayi1+$sayi2;
+		  echo "$sayi1"." ile "."$sayi2 toplamı kaçtır?";
+		 
+		  ?>
+		  <input type="hidden" name="toplamSayi" value="<?php echo $toplamSayi; ?>" />
           <div class="row">
             <div class="col-xs-8">
               <div class="checkbox icheck">

@@ -287,8 +287,8 @@ if(empty($_SESSION["username"]))
                 <i class="fa fa-plus-square"></i> <span>Profil Yönetimi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<li><a href="<?php echo SITE_URL; ?>/userUrun/urun_ekle"><i class="fa fa-circle-o"></i>Profil Bilgileri</a></li>
-				<li><a href="<?php echo SITE_URL; ?>/userUrun/urunler"><i class="fa fa-circle-o"></i>Şifre İşlemleri</a></li>
+				<li><a href="<?php echo SITE_URL; ?>/FirmaUser/firmaProfilSil"><i class="fa fa-circle-o"></i>Profil Sil</a></li>
+				<li><a href="<?php echo SITE_URL; ?>/FirmaUser/firmaProfilGuncelle"><i class="fa fa-circle-o"></i>Profil Güncelle</a></li>
 				
 
 				

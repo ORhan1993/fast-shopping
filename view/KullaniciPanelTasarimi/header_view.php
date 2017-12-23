@@ -73,7 +73,7 @@ if(empty($_SESSION["username"]))
 
       <header class="main-header">
         <!-- Logo -->
-        <a href="<?php echo SITE_URL; ?>/admin/dashboard" class="logo">
+        <a href="<?php echo SITE_URL; ?>/user/dashboard" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b></span>
           <!-- logo for regular state and mobile devices -->
@@ -268,15 +268,22 @@ if(empty($_SESSION["username"]))
 <!--            
             <li class="header">ANA MENÜLER</li>
 -->         
-				
+			<li>
+              <a href="<?php echo SITE_URL; ?>/user/kullaniciGuncelle">
+                <i class="fa fa-user"></i>
+                <span>Profil Güncelleme</span><i class="fa fa-angle-left pull-right"></i>
+                <!--<span class="label label-primary pull-right">4</span>-->
+              </a>
+              
+            </li>	
 			
 			<li class="treeview active">
               <a href="#">
                 <i class="fa fa-plus-square"></i> <span>Ürün Yönetimi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<li><a href="<?php echo SITE_URL; ?>/userUrun/urun_ekle"><i class="fa fa-circle-o"></i>Ürün Ekle</a></li>
-				<li><a href="<?php echo SITE_URL; ?>/userUrun/urunler"><i class="fa fa-circle-o"></i>Ürün İşlemleri</a></li>
+				<li><a href="<?php echo SITE_URL; ?>/user/urunEkle"><i class="fa fa-circle-o"></i>Ürün Ekle</a></li>
+				<li><a href="<?php echo SITE_URL; ?>/user/urunler"><i class="fa fa-circle-o"></i>Ürün İşlemleri</a></li>
 				
 
 				
@@ -284,11 +291,11 @@ if(empty($_SESSION["username"]))
             </li>
 			<li class="treeview active">
               <a href="#">
-                <i class="fa fa-plus-square"></i> <span>Profil Yönetimi</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-user"></i> <span>Profil Yönetimi</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-				<li><a href="<?php echo SITE_URL; ?>/userUrun/urun_ekle"><i class="fa fa-circle-o"></i>Profil Bilgileri</a></li>
-				<li><a href="<?php echo SITE_URL; ?>/userUrun/urunler"><i class="fa fa-circle-o"></i>Şifre İşlemleri</a></li>
+				<li><a href="<?php echo SITE_URL; ?>/user/profil_sil"><i class="fa fa-circle-o"></i>Profil Silme</a></li>
+				
 				
 
 				
